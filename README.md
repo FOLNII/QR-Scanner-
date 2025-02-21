@@ -27,6 +27,10 @@ dotnet restore
 dotnet build
 dotnet run
 ```
+скомпилировать проект в .exe можно с помощью команды
+```sh
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true. После этого написать то, что скомпилированный проект находится по директории bin\Release\net9.0-windows\win-x64\publish
+```
 
 ### 3. Использование программы
 1. Нажмите кнопку "Загрузить изображение"
